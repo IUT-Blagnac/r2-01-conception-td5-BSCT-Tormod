@@ -46,7 +46,7 @@ class entreprise {
 
 entreprise "1" -- "1.." artisant : Employer
 entreprise "1" -- "1.." chantier : Entreprendre
-chantier "" -- "" artisant
-(chantier,artisant) .. mission
+chantier "1.." -- "1.." artisant : Travailler
+artisant "1.." -- "1.." mission : Etre sur
 
 @enduml
