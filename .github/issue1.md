@@ -5,17 +5,22 @@ En vous inspirant du code suivant (pour ne pas démarrer à vide), réalisez un 
 ```plantuml
 @startuml
 
-usecase r as "Recenser les \n demandes de stage"
-usecase d as "Déclarer une \n demande de stage"
+usecase b as "Gérer ses chentiers"
+usecase c as "Gérer ses artisants"
+usecase d as "Etre sur un chantier"
+usecase e as "Calculer automatiquement la \n paye des employés"
 
-actor Responsable
-actor Entreprise 
+actor Entreprise
 
 'Pour aligner les 2 acteurs :
-r -[hidden]-> d
 
-Responsable -> r
+b -[hidden]-> c
+c -[hidden]-> d
+d -[hidden]-> e
+
+Entreprise -> b
+Entreprise -> c
 Entreprise -> d
-
+Entreprise -> e
 @enduml
 ```
