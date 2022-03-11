@@ -1,4 +1,4 @@
-= Diagrammes de UC avec plantUML
+= Diagrammes de UC avec plantUML - Thomas Demeyere 2B
 Jean-Michel Bruel <jbruel@gmail.com>
 v1.0, 2022-03-06 : Initial draft
 :icons: font
